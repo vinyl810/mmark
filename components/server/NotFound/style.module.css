@@ -1,0 +1,35 @@
+.not-found {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 140px);
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-text {
+  margin: 0;  
+  animation: shine 1s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--color-border2) 20%,
+    var(--color-text2) 40%,
+    var(--color-text2) 60%,
+    var(--color-border2) 80%
+  );
+  background-clip: text;
+  background-position: 75% center;
+  background-size: 200% auto;
+  color: transparent;
+  font-size: 10vw;
+  font-weight: bold;
+}  
+
+@keyframes shine {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: 200% center;
+  }
+}
